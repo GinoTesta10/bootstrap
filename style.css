@@ -9,7 +9,54 @@
 }
 .main-content {
   background-color: blueviolet;
+  max-height: 100%;
 }
 .footer {
   background-color: yellow;
+  height: 100px;
+}
+
+.h1-header {
+  display: flex;
+  justify-content: center;
+}
+
+.h4-exp {
+  display: flex;
+  justify-content: center;
+}
+
+.ul-exp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 3px solid black;
+}
+
+.h4-port {
+  display: flex;
+  justify-content: center;
+}
+.icons {
+  position: relative;
+  top: 20px;
+}
+
+.portfolio {
+  border-bottom: 3px solid black;
+}
+
+@media (min-width: 481px) and (max-width: 1025px) {
+  .portfolio {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24%;
+    border-bottom: none;
+  }
+  .footer {
+    border-top: 3px solid black;
+  }
 }
